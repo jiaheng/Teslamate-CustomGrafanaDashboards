@@ -1606,7 +1606,7 @@
           ]
         }
       ],
-      "title": "\u00d8 Cost per 100 $length_unit",
+      "title": "Ø Cost per 100 $length_unit",
       "type": "stat"
     },
     {
@@ -1693,7 +1693,7 @@
           ]
         }
       ],
-      "title": "\u00d8 Cost per kWh",
+      "title": "Ø Cost per kWh",
       "type": "stat"
     },
     {
@@ -1828,7 +1828,7 @@
           ]
         }
       ],
-      "title": "\u00d8 Consumption (net)",
+      "title": "Ø Consumption (net)",
       "type": "stat"
     },
     {
@@ -1963,7 +1963,7 @@
           ]
         }
       ],
-      "title": "\u00d8 Consumption (gross) ",
+      "title": "Ø Consumption (gross) ",
       "type": "stat"
     },
     {
@@ -2784,7 +2784,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "\u00d8 Energy used / Charge"
+              "options": "Ø Energy used / Charge"
             },
             "properties": [
               {
@@ -2893,7 +2893,7 @@
               },
               {
                 "id": "displayName",
-                "value": "\u00d8 Temp"
+                "value": "Ø Temp"
               },
               {
                 "id": "thresholds",
@@ -2962,7 +2962,7 @@
               },
               {
                 "id": "displayName",
-                "value": "\u00d8 Consumption (net)"
+                "value": "Ø Consumption (net)"
               }
             ]
           },
@@ -2974,7 +2974,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "\u00d8 Consumption (gross)"
+                "value": "Ø Consumption (gross)"
               },
               {
                 "id": "unit",
@@ -2994,7 +2994,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "\u00d8 Consumption (net)"
+                "value": "Ø Consumption (net)"
               },
               {
                 "id": "unit",
@@ -3014,7 +3014,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "\u00d8 Consumption (gross)"
+                "value": "Ø Consumption (gross)"
               },
               {
                 "id": "unit",
@@ -3034,7 +3034,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "\u00d8 Temp"
+                "value": "Ø Temp"
               },
               {
                 "id": "unit",
@@ -3098,7 +3098,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "\u00d8 Cost / kWh"
+              "options": "Ø Cost / kWh"
             },
             "properties": [
               {
@@ -3128,7 +3128,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "\u00d8 Cost / 100 km"
+              "options": "Ø Cost / 100 km"
             },
             "properties": [
               {
@@ -3597,10 +3597,10 @@
               "sum_energy_used_kwh": 7
             },
             "renameByName": {
-              "avg_cost_km": "\u00d8 Cost / 100 km",
-              "avg_cost_kwh": "\u00d8 Cost / kWh",
-              "avg_cost_mi": "\u00d8 Cost / 100 mi",
-              "avg_energy_charged_kwh": "\u00d8 Energy used / Charge",
+              "avg_cost_km": "Ø Cost / 100 km",
+              "avg_cost_kwh": "Ø Cost / kWh",
+              "avg_cost_mi": "Ø Cost / 100 mi",
+              "avg_energy_charged_kwh": "Ø Energy used / Charge",
               "avg_outside_temp_c": "",
               "avg_outside_temp_f": "",
               "cnt": "# of Drives",
