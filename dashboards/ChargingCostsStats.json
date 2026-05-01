@@ -3329,7 +3329,7 @@
           "hide": false,
           "metricColumn": "none",
           "rawQuery": true,
-          "rawSql": "WITH data AS (\n  SELECT\n    drives.*,\n    date_trunc('month', start_date, '$__timezone') as date,\n  FROM drives)\nSELECT\n  EXTRACT(EPOCH FROM date)*1000 AS date_from,\n  EXTRACT(EPOCH FROM date + interval '1 month')*1000 AS date_to,\n  to_char(date at time zone '$__timezone', 'YYYY Month') AS display,\n  date,\n  sum(GREATEST(start_${preferred_range}_range_km - end_${preferred_range}_range_km, 0) * car.efficiency * 1000) / \n  convert_km(sum(distance)::numeric, '$length_unit') as consumption_net_$length_unit\nFROM data\nJOIN cars car ON car.id = car_id\nWHERE\n  car_id = $car_id AND\n  $__timeFilter(start_date)\nGROUP BY date",
+          "rawSql": "WITH data AS (\n  SELECT\n    drives.*,\n    date_trunc('month', start_date, '$__timezone') as date\n  FROM drives)\nSELECT\n  EXTRACT(EPOCH FROM date)*1000 AS date_from,\n  EXTRACT(EPOCH FROM date + interval '1 month')*1000 AS date_to,\n  to_char(date at time zone '$__timezone', 'YYYY Month') AS display,\n  date,\n  sum(GREATEST(start_${preferred_range}_range_km - end_${preferred_range}_range_km, 0) * car.efficiency * 1000) / \n  convert_km(sum(distance)::numeric, '$length_unit') as consumption_net_$length_unit\nFROM data\nJOIN cars car ON car.id = car_id\nWHERE\n  car_id = $car_id AND\n  $__timeFilter(start_date)\nGROUP BY date",
           "refId": "C",
           "select": [
             [
